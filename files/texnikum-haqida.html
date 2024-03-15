@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha512-/JveC6Qg4Qh1gfjR36v/LlV9zJR8G1J64QJddzwP35kZ2UYNoVr/OSPosM371eLs2YF44jOpaFqXmOwjb5Vtow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha512-Sr80Kts/xH7GgbH/Zobc9Q+oa6qMa9GVDn4KurjMZFft6RkrKmfCk93vCn97SvcFDdk/hwduh/8Jkt/sOQYIPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Qo'shimcha stillar -->
+    <style>
+        * {
+            transition: all .2s linear;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        footer{
+            margin-top: auto;
+        }       
+        .display-flex {
+            display: flex;
+        }
+        .Galereya {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0 auto;
+            
+        }
+        .Galereya a {
+            width: 600px;
+            height: 400px;
+            margin: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 5px #000;
+        }
+        .Galereya a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .Galereya a img:hover {
+            transform: scale(1.1);
+        }
+        h2 {
+            font-size: 40px;
+            margin-top: 25px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            font-size: 18px;
+        }
+        .hide {
+            display: none;
+        }
+
+        @media (max-width: 980px) {
+            .display-flex {
+                display: block;
+            }
+
+            .Galereya a {
+            width: 100%;   
+            height: 300px;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 5px #000;
+            }
+
+            .asosiy-bolim {
+                margin-top: 2px !important;
+            }
+
+            .asosiy-bolim .datep{
+                margin-left: 22px !important;
+                margin-top: -20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <!-- Glavni Icon -->
+    <title>Surxondaryo Axborot Texnologiyalari Texnikumi</title>
+
+   
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <h3 class="navbar_logo">
+            <span class="text_warrning">IT </span> TEXNIKUM
+          </h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="../">BOSH SAHIFA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="../#About_us">BIZ HAQIMIZDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="../#Our_servic">KURSLAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="../#Our_Teamm">JAMOA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="../#News_Page">YANGILIKLAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="../#main-footer">BOG'LANISH</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV  END -->
+
+    <section id="About_us" class="backgroung_img">
+        <main class="container py-4">
+          <div id="about" class="row my-5 pt-5 justify-content-center">
+            <div class="col-11 col-md-5 mb-5 mb-md-0">
+              <img src="../IMG/news_img_2.jpg" class="img-fluid" alt="about-img-1.jpg" />
+            </div>
+            <div class="col-12 col-md-7 ps-5 d-flex flex-column justify-content-center">
+              <h6>Biz bilan o'z orzuyingizga erishing...</h6>
+              <p>
+                Muhammad al-Xorazmiy nomidagi Toshkent axborot texnologiyalari universiteti huzuridagi SURXONDARYO <b>AXBOROT TEXNOLOGIYALARI TEXNIKUMI.</b>
+              </p>
+            </div>
+          </div>
+        </main>
+      </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center bg-dark p-4 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>
+              Copyright &copy;
+              <span id="year"></span> This site was created by
+              <span class="text-primary font-weight-bold">SherzodbekCoders</span>, a student of
+              <a href="https://t.me/Tasnim_Akademiya" target="_blank" class="text-primary font-weight-bold">
+                Tasnim Academy
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========================================================================== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        lightGallery(document.querySelector(".Galereya"));
+    </script>
+
+    <!-- JS File -->
+    <script src="./app.js"></script>
+  </body>
+</html>
